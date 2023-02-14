@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="images/pic.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Henny+Penny&family=Pattaya&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color: #9453a6;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="mainPage.html">
+                <img class="logoPic" src="images/pic.png" alt="Logo" width="80" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contactUs.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="quiz.html">Quiz</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-#f2cc0f" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <h2 style="margin-top: 20px; margin-bottom: 20px;">Lightbox Gallery</h2>
+
+    <div class="column">
+
+        <img src="images/IMG_4998-scaled.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+
+
+        <img src="images/c3308041-2bd1-4a24-9742-bcc8cee2e2f4.png" onclick="openModal();currentSlide(2)"
+            class="hover-shadow cursor">
+
+
+        <img src="images/oh-what-a-beautiful-morning.jpg" onclick="openModal();currentSlide(3)"
+            class="hover-shadow cursor">
+
+
+        <img src="images/IMG_9517-3smaller.avif" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+
+        <img src="images/HL2R4RKKERAFRIVYUVMULXEKAE (1).avif" onclick="openModal();currentSlide(5)"
+            class="hover-shadow cursor">
+
+        <img src="images/photo-1610746799307-e5b7872b6537.avif" onclick="openModal();currentSlide(6)"
+            class="hover-shadow cursor">
+
+        <img src="images/pic1.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+
+        <img src="images/RIUKFH3JVFCUPEDHPGGYYKNC2U.jpg" onclick="openModal();currentSlide(8)"
+            class="hover-shadow cursor">
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="images/IMG_4998-scaled.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="images/c3308041-2bd1-4a24-9742-bcc8cee2e2f4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="images/oh-what-a-beautiful-morning.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="images/IMG_9517-3smaller.avif" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="images/HL2R4RKKERAFRIVYUVMULXEKAE (1).avif" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="images/photo-1610746799307-e5b7872b6537.avif" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="images/pic1.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="images/RIUKFH3JVFCUPEDHPGGYYKNC2U.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="columnSmall">
+                <img class="demo cursor" src="images/IMG_4998-scaled.jpg" style="width: 24%;" onclick="currentSlide(1)"
+                    alt="Mardi Gras">
+
+
+                <img class="demo cursor" src="images/c3308041-2bd1-4a24-9742-bcc8cee2e2f4.png" style="width: 24%;;"
+                    onclick="currentSlide(2)" alt="Mardi Gras 2">
+
+
+                <img class="demo cursor" src="images/oh-what-a-beautiful-morning.jpg" style="width: 24%;"
+                    onclick="currentSlide(3)" alt="Mardi Gras 3">
+
+
+                <img class="demo cursor" src="images/IMG_9517-3smaller.avif" style="width: 24%;"
+                    onclick="currentSlide(4)" alt="Mardi Gras 4">
+
+                <img class="demo cursor" src="images/HL2R4RKKERAFRIVYUVMULXEKAE (1).avif" style="width: 24%;"
+                    onclick="currentSlide(5)" alt="Mardi Gras 5">
+
+                <img class="demo cursor" src="images/photo-1610746799307-e5b7872b6537.avif" style="width: 24%;"
+                    onclick="currentSlide(6)" alt="Mardi Gras 6">
+
+                <img class="demo cursor" src="images/pic1.jpeg" style="width: 24%;" onclick="currentSlide(7)"
+                    alt="Mardi Gras 7">
+
+                <img class="demo cursor" src="images/RIUKFH3JVFCUPEDHPGGYYKNC2U.jpg" style="width: 24%;"
+                    onclick="currentSlide(8)" alt="Mardi Gras 8">
+
+            </div>
+        </div>
+    </div>
+
+    <h2 style="margin-top: 20px; margin-bottom: 20px;">Mardi Gras Videos</h2>
+
+    <div class="videos">
+        <iframe src="https://www.youtube.com/embed/EkIZwXbSh-Y" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/pBFSY4RM0p4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/R2v3E00bceo" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/Sw_OgnXm2pE" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        All rights reserved to Yair Buchnik &#169;
+    </footer>
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

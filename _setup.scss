@@ -1,0 +1,42 @@
+$Black: #0d0d0d;
+$yellow: #f2cc0f;
+$green: #8cbf3f;
+$white: #f2f2f2;
+$purple: #9453a6;
+$roboto: 'Roboto', sans-serif;
+$pattaya: 'Pattaya';
+$henny: 'Henny Penny';
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Pattaya';
+    font-family: 'Henny Penny';
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@mixin desktop {
+    @media (max-width:1800px) {
+        @content;
+    }
+
+}
+
+@mixin tablet {
+    @media (max-width:1000px) {
+        @content;
+    }
+
+}
+
+@mixin mobile {
+    @media (max-width:576px) {
+        @content;
+    }
+
+}

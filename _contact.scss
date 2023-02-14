@@ -1,0 +1,37 @@
+.map {
+    width: 100vw;
+    height: 25vh;
+    filter: brightness(40%);
+}
+
+.map:hover {
+    filter: brightness(100%);
+    transition: 1s;
+}
+
+label {
+    color: $yellow;
+}
+
+#sendForm {
+    display: block;
+    width: 20vw;
+    margin: auto;
+
+    @include mobile {
+        width: 50vw;
+    }
+
+}
+
+
+input {
+    background-color: $green;
+
+}
+
+textarea {
+    background-color: $green;
+    border: 1px solid #000;
+
+}

@@ -1,0 +1,19 @@
+#accordionFlushExample {
+    font-family: $roboto;
+    width: 75vw;
+    margin: auto;
+
+
+
+    @include mobile {
+        width: 100vw;
+    }
+}
+
+#accordionFlushExample button {
+
+    background-color: $green;
+    color: $yellow;
+    font-family: $pattaya;
+    font-size: 1.6rem;
+}

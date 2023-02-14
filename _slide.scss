@@ -1,0 +1,44 @@
+.carousel-inner img {
+    height: 90vh;
+}
+
+.carousel-inner h5 {
+    font-family: 'Henny Penny';
+    color: $Black;
+    font-size: 1.8rem;
+}
+
+.carousel-inner p {
+    font-family: 'Roboto';
+    color: $Black;
+    font-size: 1.3rem;
+}
+
+#carouselExampleCaptions {
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.insteadSlide {
+    display: none;
+
+    @include mobile {
+        display: block;
+        width: 100vw;
+
+    }
+
+    @include tablet {
+        display: block;
+        width: 100vw;
+
+    }
+
+
+
+}
