@@ -1,2 +1,2 @@
-# frontendProject
-this is the project
+# Mardi-Gras
+HTMl, CSS, Bootsrtap, SASS project of festival website
